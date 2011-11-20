@@ -1,5 +1,5 @@
 // stdafx.cpp : source file that includes just the standard includes
-// Grobner-Shishov.pch will be the pre-compiled header
+// Grobner-Shirshov-Bases.pch will be the pre-compiled header
 // stdafx.obj will contain the pre-compiled type information
 
 #include "stdafx.h"
