@@ -1,3 +1,8 @@
+Grobner-Shirshov-bases
+======================
+
+A C++ library for calculating Grobner-Shirshov bases for semigroups
+
 1. The project is developing under MSVC 11.
 2. Boost 1.48.0
 3. GoogleTest 1.6.0
