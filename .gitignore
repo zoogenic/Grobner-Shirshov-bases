@@ -1,5 +1,9 @@
 *.suo
 *.sdf
 *.opensdf
+*.vcxproj.user
 ipch/
 x64/
+Debug/
+Release/
+Libs/
