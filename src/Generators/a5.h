@@ -7,7 +7,7 @@
 #ifndef _GROBNER_SHIRSHOV_BASES__A5_H_
 #define _GROBNER_SHIRSHOV_BASES__A5_H_
 
-namespace Groups
+namespace Generators
 {
 
 enum class A5 { a0, a1, a2, a3, a4 };
