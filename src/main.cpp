@@ -8,10 +8,10 @@
 #include <iostream>
 
 // THIS
-#include "Generators/a5.h"
+#include "A5/Generators.h"
 
 int main()
 {
-    Generators::A5 v = Generators::A5::a1;
-    std::cout << static_cast<std::underlying_type<Generators::A5>::type>(v) << std::endl;
+    A5::Generators v = A5::Generators::a2;
+    std::cout << static_cast<std::underlying_type<A5::Generators>::type>(v) << std::endl;
 }
