@@ -1,7 +1,7 @@
 Grobner-Shirshov-bases
 ======================
 
-A C++ library for calculating Grobner-Shirshov bases for semigroups
+A C++ library for calculating Grobner-Shirshov bases for involutive groups
 
 * The project is developing under Eclipse CDT (Kepler)
 * GCC 4.8.1
