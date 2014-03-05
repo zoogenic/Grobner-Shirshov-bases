@@ -1,0 +1,57 @@
+/**
+ * @file Version.cpp
+ */
+
+// THIS
+#include "GrobShirVersion.h"
+
+namespace GrobShir
+{
+namespace Version
+{
+
+//--------------------------------------------------------------------------------------------------
+std::string getProjectName()
+{
+    return "${PROJECT}";
+}
+
+//--------------------------------------------------------------------------------------------------
+std::string getProjectDescription()
+{
+    return "${PROJECT_DESCRIPTION}";
+}
+
+//--------------------------------------------------------------------------------------------------
+std::string getMajor()
+{
+    return "${PROJECT_VERSION_MAJOR}";
+}
+
+//--------------------------------------------------------------------------------------------------
+std::string getMinor()
+{
+    return "${PROJECT_VERSION_MINOR}";
+}
+
+//--------------------------------------------------------------------------------------------------
+std::string getPatch()
+{
+    return "${PROJECT_VERSION_PATCH}";
+}
+
+//--------------------------------------------------------------------------------------------------
+std::string getRevision()
+{
+    return "${PROJECT_VERSION_REVISION}";
+}
+
+//--------------------------------------------------------------------------------------------------
+std::string getString()
+{
+    return "${PROJECT} version ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH} (revision ${PROJECT_VERSION_REVISION})";
+}
+
+} // namespace Version
+} // namespace GrobShir
+ 
