@@ -10,7 +10,7 @@
 namespace A5
 {
 
-enum class Generators { a0, a1, a2, a3, a4 };
+int Generators[] = { 0, 1, 2, 3, 4 };
 
 }
 

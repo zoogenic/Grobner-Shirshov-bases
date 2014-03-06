@@ -12,6 +12,5 @@
 
 int main()
 {
-    A5::Generators v = A5::Generators::a2;
-    std::cout << static_cast<std::underlying_type<A5::Generators>::type>(v) << std::endl;
+    std::cout << sizeof(A5::Generators) / sizeof(A5::Generators[0]) << std::endl;
 }
