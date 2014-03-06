@@ -15,12 +15,18 @@ Environment
 ========
 Building
 ========
-cd build
-../build.h ..
-make
-../bin/grobshir
+
+::
+
+  cd build
+  ../build.h ..
+  make
+  ../bin/grobshir
 
 =======
 Testing
 =======
-../bin/GrobShir_test
+
+::
+
+  ../bin/GrobShir_test
