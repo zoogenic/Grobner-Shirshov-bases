@@ -14,23 +14,32 @@
 namespace Types
 {
 
-template <typename T> using Monom = std::vector<T>;
+template <typename T> using Monom = std::vector<T, std::allocator<T>>;
 
-auto my_comp = [](const std::string& left, const std::string& right) -> bool
+template <typename T> Monom<T> add(const Monom<T> &_lhs, const Monom<T> &_rhs)
 {
-  // whatever
+    Monom<T> ret;
+    bool isTailsMatch = *_lhs.rbegin() == *_rhs.begin();
+    ret.reserve(_lhs.size() + _rhs.size() - isTailsMatch);
+    ret.insert(ret.end(), _lhs.begin(), _lhs.end());
+    ret.insert(ret.end(), isTailsMatch ? _rhs.begin()++ : _rhs.begin(), _rhs.end());
 }
 
-template <typename T> using Relation = std::set<Monom<T>, >;
-
-template <typename T>
-bool operator > (const Monom &_lhs, const Monom &_rhs)
-{
-    size_t lsize = _lhs.size();
-    size_t rsize = _rhs.size();
-
-    return lsize > rsize || lsize == rsize && std::
-}
+//auto my_comp = [](const std::string& left, const std::string& right) -> bool
+//{
+//  // whatever
+//}
+//
+//template <typename T> using Relation = std::set<Monom<T>, >;
+//
+//template <typename T>
+//bool operator > (const Monom &_lhs, const Monom &_rhs)
+//{
+//    size_t lsize = _lhs.size();
+//    size_t rsize = _rhs.size();
+//
+//    return lsize > rsize || lsize == rsize && std::
+//}
 
 } // Types
 

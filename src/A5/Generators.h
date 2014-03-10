@@ -10,7 +10,9 @@
 namespace A5
 {
 
-int Generators[] = { 0, 1, 2, 3, 4 };
+enum class Elements { a0, a1, a2, a3, a4 };
+
+Elements Generators[] = { Elements::a0, Elements::a1, Elements::a2, Elements::a3, Elements::a4 };
 
 }
 

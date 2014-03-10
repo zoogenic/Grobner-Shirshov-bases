@@ -44,7 +44,7 @@ configure_file ( src/${PROJECT}Version.cpp.in
 include_directories ( build
                       src
                       src/A5
-                   )
+                    )
 
 #--------------------------------------------------------------------------------------------------
 # target ${PROJECT} (executing module)
@@ -52,7 +52,7 @@ include_directories ( build
 set ( HEADERS_FILES
       src/${PROJECT}Version.h
       src/A5/Generators.h
-      src/GrobShirVersion.h
+      #src/GrobShirVersion.h
       src/Types.h
       
     )
