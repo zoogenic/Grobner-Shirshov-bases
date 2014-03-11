@@ -24,7 +24,11 @@ int main()
     ,   A5::Elements::a4
     ,   A5::Elements::a0
     };
-    std::copy(monom.begin(), monom.end()
-        , std::ostream_iterator<std::underlying_type<A5::Elements>::type>(std::cout, " ")
-        , std::underlying_type<A5::Elements>::type);
+    std::transform(monom.begin(), monom.end()
+    ,   std::ostream_iterator<std::underlying_type<A5::Elements>::type>(std::cout, " ")
+    ,   [&](A5::Elements &_el) -> std::underlying_type<A5::Elements>::type
+        {
+            return std::underlying_type<A5::Elements>::type(_el);
+        }
+    );
 }
