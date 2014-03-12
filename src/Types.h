@@ -43,4 +43,10 @@ template <typename T> Monom<T> add(const Monom<T> &_lhs, const Monom<T> &_rhs)
 
 } // Types
 
+//template <typename T>
+//std::ostream &operator << (std::ostream &_os, const T &_t)
+//{
+//    return _os << typename std::underlying_type<T>::type(_t);
+//}
+
 #endif /* _GROBNER_SHIRSHOV_BASES__TYPES_H_ */

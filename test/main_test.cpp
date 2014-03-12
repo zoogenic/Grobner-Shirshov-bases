@@ -10,15 +10,15 @@
 // GTEST
 #include <gtest/gtest.h>
 
-TEST(A5SizeTest, PositiveNos)
-{
-    ASSERT_EQ(5, sizeof(A5::Generators) / sizeof(A5::Generators[0]));
-}
-
-TEST(A5SizeTest, NegativeNos)
-{
-    ASSERT_EQ(6, sizeof(A5::Generators) / sizeof(A5::Generators[0]));
-}
+//TEST(A5SizeTest, PositiveNos)
+//{
+//    ASSERT_EQ(5, sizeof(A5::Generators) / sizeof(A5::Generators[0]));
+//}
+//
+//TEST(A5SizeTest, NegativeNos)
+//{
+//    ASSERT_EQ(6, sizeof(A5::Generators) / sizeof(A5::Generators[0]));
+//}
 
 int main(int argc, char **argv)
 {

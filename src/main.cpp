@@ -15,7 +15,7 @@
 
 int main()
 {
-    std::cout << sizeof(A5::Generators) / sizeof(A5::Generators[0]) << std::endl;
+//    std::cout << sizeof(A5::Generators) / sizeof(A5::Generators[0]) << std::endl;
 
     Types::Monom<A5::Elements> monom =
     {   A5::Elements::a1
@@ -24,11 +24,17 @@ int main()
     ,   A5::Elements::a4
     ,   A5::Elements::a0
     };
-    std::transform(monom.begin(), monom.end()
-    ,   std::ostream_iterator<std::underlying_type<A5::Elements>::type>(std::cout, " ")
-    ,   [&](A5::Elements &_el) -> std::underlying_type<A5::Elements>::type
-        {
-            return std::underlying_type<A5::Elements>::type(_el);
-        }
-    );
+//    std::transform(monom.begin(), monom.end()
+//    ,   std::ostream_iterator<std::underlying_type<A5::Elements>::type>(std::cout, " ")
+//    ,   [&](A5::Elements &_el) -> std::underlying_type<A5::Elements>::type
+//        {
+//            return std::underlying_type<A5::Elements>::type(_el);
+//        }
+//    );
+
+    std::copy(monom.begin(), monom.end(), std::ostream_iterator<A5::Elements>(std::cout, " "));
+//    for (auto i : monom)
+//    {
+//        std::cout << i << std::endl;
+//    }
 }
