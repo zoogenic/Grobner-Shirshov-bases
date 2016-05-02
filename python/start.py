@@ -5,7 +5,7 @@ import gsmonoms
 import gsdefining_relations
 
 def helpmessage():
-    print "Usage:\n    start.py -m <monomFile>"
+    print "Usage:\n    start.py -r <defining relations file>"
 
 def main(argv):
     monomfile = ''
@@ -19,7 +19,7 @@ def main(argv):
         if opt == "-h":
             helpmessage()
             sys.exit()
-        elif opt in ("-m", "--monoms"):
+        elif opt in ("-r", "--defrels"):
             monomfile = arg
 
     defining_relations = []
