@@ -48,11 +48,12 @@ def main(argv):
 
     print "===================="
     cmp_list = defining_relations[:]
-    defining_relations.sort(cmp = gsdefining_relations.compare)
+    cmp_list.sort(cmp = gsdefining_relations.compare)
+    print '\n'.join(map(str, cmp_list))
     print "===================="
-
-    defining_relations.sort(key = gsdefining_relations.key)
-    print '\n'.join(map(str, defining_relations))
+    key_list = defining_relations[:]
+    key_list.sort(key = gsdefining_relations.key)
+    print '\n'.join(map(str, key_list))
 
 
 if __name__ == "__main__":

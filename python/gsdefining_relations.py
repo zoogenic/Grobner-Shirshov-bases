@@ -8,8 +8,8 @@ def fix(relation):
     return relation
 
 def compare(lhs, rhs):
-    return gsmonoms.compare(lhs[0], rhs[0]) #or \
-#            gsmonoms.compare(lhs[1], rhs[1])
+    return gsmonoms.compare(lhs[0], rhs[0]) or \
+            gsmonoms.compare(lhs[1], rhs[1])
 
 def key(relation):
     return gsmonoms.key(relation[0]), gsmonoms.key(relation[1])
@@ -20,7 +20,7 @@ def make_compositions(lhs, rhs):
     szr = len(rhs)
     i = 1 - szr
     while i < szl:
-        l = lhs[max(0, i):min(i+szr, szl)]
+        l = lhs[max(0, i):min(i + szr, szl)]
         r = rhs[max(0, -i):min(szr, szl - i)]
         if (l == r):
             print l, r

@@ -23,7 +23,8 @@ def gt(lhs, rhs):
     return lenl > lenr
 
 def compare(lhs, rhs):
-    return (len(lhs) - len(rhs)) or cmp(rhs, lhs)
+    # return (len(lhs) - len(rhs)) or cmp(rhs, lhs)
+    return (len(rhs) - len(lhs)) or cmp(lhs, rhs)
 
 def key(lst): #induce reverse order
     return -len(lst), lst
