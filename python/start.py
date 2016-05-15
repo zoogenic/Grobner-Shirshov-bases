@@ -9,9 +9,9 @@ def helpmessage():
 
 def main(argv):
     print "ula-la"
-    monomfile = ''
+    relationsfile = ''
     try:
-        opts, args = getopt.getopt(argv, "hm:", ["monoms="])
+        opts, args = getopt.getopt(argv, "hr:", ["relations="])
     except getopt.GetoptError:
         helpmessage()
         sys.exit(2)
@@ -22,13 +22,17 @@ def main(argv):
         if opt == "-h":
             helpmessage()
             sys.exit()
-        elif opt in ("-r", "--defrels"):
-            monomfile = arg
+        elif opt in ("-r", "--relations"):
+            relationsfile = arg
+            
+    if not relationsfile:
+        helpmessage()
+        sys.exit()
 
     defining_relations = []
 
     try:
-        with open(monomfile, 'r') as f:
+        with open(relationsfile, 'r') as f:
             for line in f:
                 rel = ast.literal_eval(line)
                 fixed_rel = gsdefining_relations.fix(rel)
