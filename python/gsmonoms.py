@@ -21,9 +21,9 @@ def gt(lhs, rhs):
     if lenl == lenr:
         return rhs > lhs
     return lenl > lenr
-    
+
 def compare(lhs, rhs):
     return (len(lhs) - len(rhs)) or cmp(rhs, lhs)
-    
+
 def key(lst): #induce reverse order
     return -len(lst), lst

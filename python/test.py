@@ -23,7 +23,7 @@ def gstest1(lhs, rhs):
         b = max(0, -i)
         c = min(i+szr, szl)
         d = min(szr, szl - i)
-        
+
         if (lhs[a:c] == rhs[b:d]):
             u = rhs[0:b]
             v = rhs[d:szr]

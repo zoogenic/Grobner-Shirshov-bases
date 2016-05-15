@@ -8,15 +8,12 @@ def helpmessage():
     print "Usage:\n    start.py -r <defining relations file>"
 
 def main(argv):
-    print "ula-la"
     relationsfile = ''
     try:
         opts, args = getopt.getopt(argv, "hr:", ["relations="])
     except getopt.GetoptError:
         helpmessage()
         sys.exit(2)
-        
-    print "urlala"
 
     for opt, arg in opts:
         if opt == "-h":
@@ -24,7 +21,7 @@ def main(argv):
             sys.exit()
         elif opt in ("-r", "--relations"):
             relationsfile = arg
-            
+
     if not relationsfile:
         helpmessage()
         sys.exit()
@@ -50,6 +47,10 @@ def main(argv):
     print '\n'.join(map(str, defining_relations))
 
     print "===================="
+    cmp_list = defining_relations[:]
+    defining_relations.sort(cmp = gsdefining_relations.compare)
+    print "===================="
+
     defining_relations.sort(key = gsdefining_relations.key)
     print '\n'.join(map(str, defining_relations))
 
