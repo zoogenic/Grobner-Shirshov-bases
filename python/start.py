@@ -8,12 +8,15 @@ def helpmessage():
     print "Usage:\n    start.py -r <defining relations file>"
 
 def main(argv):
+    print "ula-la"
     monomfile = ''
     try:
         opts, args = getopt.getopt(argv, "hm:", ["monoms="])
     except getopt.GetoptError:
         helpmessage()
         sys.exit(2)
+        
+    print "urlala"
 
     for opt, arg in opts:
         if opt == "-h":
