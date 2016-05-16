@@ -46,10 +46,10 @@ def main(argv):
 
     print '\n'.join(map(str, defining_relations))
 
-    print "===================="
-    cmp_list = defining_relations[:]
-    cmp_list.sort(cmp = gsdefining_relations.compare)
-    print '\n'.join(map(str, cmp_list))
+    # print "===================="
+    # cmp_list = defining_relations[:]
+    # cmp_list.sort(cmp = gsdefining_relations.compare)
+    # print '\n'.join(map(str, cmp_list))
     print "===================="
     key_list = defining_relations[:]
     key_list.sort(key = gsdefining_relations.key)
