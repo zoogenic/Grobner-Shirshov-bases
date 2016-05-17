@@ -1,3 +1,5 @@
+import itertools
+
 def gstest(lhs, rhs):
     results = []
     szl = len(lhs)
@@ -32,3 +34,19 @@ def gstest1(lhs, rhs):
             results.append((u, v, w, t))
         i += 1
     return results
+
+def make_pairs(lst):
+    for pair in itertools.combinations(lst,2):
+        print pair[1],pair[0]
+
+
+if __name__ == "__main__":
+    lst = [1,2,3,4,5,6,7]
+    print lst
+    make_pairs(lst)
+
+
+
+
+
+
