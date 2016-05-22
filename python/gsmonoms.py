@@ -36,7 +36,7 @@ def get_intersect_additions(lhs, rhs):
         rhsl = max(0, -i)
         lhsr = min(szr + i, szl)
         rhsr = min(szr, szl - i)
-        
+
         if lhs[lhsl:lhsr] == rhs[rhsl:rhsr]:
             u = rhs[:rhsl]
             v = rhs[rhsr:]
@@ -44,7 +44,7 @@ def get_intersect_additions(lhs, rhs):
             t = lhs[lhsr:]
             assert u + lhs + v == w + rhs + t
             yield u, v, w, t
-            
+
 
 if __name__ == "__main__":
     a = [1,2,5,7,6,9,1,3,1,2,6,6,3,1,2,6,1,3]
