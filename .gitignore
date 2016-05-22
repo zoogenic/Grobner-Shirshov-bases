@@ -2,6 +2,7 @@
 *.sdf
 *.opensdf
 *.vcxproj.user
+*.pyc
 ipch/
 x64/
 Debug/
